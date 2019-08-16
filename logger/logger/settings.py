@@ -23,9 +23,13 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = os.environ.get('DJANGO_SECURITY_KEY', 'ue+0&&js44g(mn4v#+7im1t9*+1mb!t_@7w5%ox$kd!l%vvve*')
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
 
-ALLOWED_HOSTS = []
+if os.environ.get('DJANGO_ALLOWED_HOSTS'):
+    DEBUG = False
+    ALLOWED_HOSTS = os.environ.get('DJANGO_ALLOWED_HOSTS').split(',')
+else:
+    DEBUG = True
+    ALLOWED_HOSTS = []
 
 
 # Application definition

@@ -24,10 +24,27 @@ To configure, set environment variables
 * `MYSQL_DB` - mysql database port, default is happy_log
 * `MYSQL_USER` - mysql database port, default is happy_log
 * `MYSQL_PASSWORD` - mysql database port, default is happy_log
+* `DJANGO_ALLOWED_HOSTS` - set this to comma-separated list of hostnames to run on, like `domain1.com,domain2.com`
+* `DJANGO_SECURITY_KEY` - Django security key, set this to random string in production. See https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
 
 ## Initial setup
 
 Set environment variables mentioned above
+
+Apply migrations to create database tables
+```
+python manage.py migrate
+```
+
+Compile translation messages, to enable localized interface
+```
+python manage.py compilemessages
+```
+
+Collect static files to be served by the web server
+```
+python manage.py collectstatic
+```
 
 Create first admin user with
 ```
@@ -35,3 +52,5 @@ python manage.py createsuperuser
 ```
 
 Do setup applicable for your web server to run wsgi application, located in `logger/logger/wsgi.py`
+
+Configure your web server so that `static` directory is available under `/static/`.
