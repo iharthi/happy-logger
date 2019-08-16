@@ -24,3 +24,14 @@ To configure, set environment variables
 * `MYSQL_DB` - mysql database port, default is happy_log
 * `MYSQL_USER` - mysql database port, default is happy_log
 * `MYSQL_PASSWORD` - mysql database port, default is happy_log
+
+## Initial setup
+
+Set environment variables mentioned above
+
+Create first admin user with
+```
+python manage.py createsuperuser
+```
+
+Do setup applicable for your web server to run wsgi application, located in `logger/logger/wsgi.py`
