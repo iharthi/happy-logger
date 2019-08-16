@@ -1,0 +1,69 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2019-08-16 23:09+0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Language: \n"
+"Plural-Forms: nplurals=4; plural=(n%10==1 && n%100!=11 ? 0 : n%10>=2 && n%"
+"10<=4 && (n%100<12 || n%100>14) ? 1 : n%10==0 || (n%10>=5 && n%10<=9) || (n%"
+"100>=11 && n%100<=14)? 2 : 3);\n"
+
+#: .\entry\admin.py:24
+msgid "Export selected to excel"
+msgstr "Экспортировать в excel"
+
+#: .\entry\models.py:13
+msgid "Timestamp"
+msgstr "Метка времени"
+
+#: .\entry\models.py:14
+msgid "Hostname"
+msgstr "Имя хоста"
+
+#: .\entry\models.py:14 .\entry\views.py:26
+msgid "Unknown"
+msgstr "Неизвестно"
+
+#: .\entry\models.py:15
+msgid "Message"
+msgstr "Сообщение"
+
+#: .\entry\models.py:18
+msgid "Message from {hostname} on {timestamp}"
+msgstr "Сообщение от {hostname}, {timestamp}"
+
+#: .\entry\models.py:26
+msgid "Exported messages"
+msgstr "Экспортированные сообщения"
+
+#: .\entry\models.py:61
+msgid "Log Entry"
+msgstr "Запись журнала"
+
+#: .\entry\models.py:62
+msgid "Log Entries"
+msgstr "Записи журнала"
+
+#: .\logger\urls.py:22
+msgid "Happy logger"
+msgstr "Счастливый логгер"
+
+#: .\logger\urls.py:23
+msgid "Be happy and log everything"
+msgstr "Будьте счастливы и все записывайте"
+
+#: .\logger\urls.py:24
+msgid "Life is joy"
+msgstr "Жизнь чудесна"

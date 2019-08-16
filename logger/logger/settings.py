@@ -132,5 +132,7 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
+LOCALE_PATHS = [os.path.join(BASE_DIR, 'locale')]
+
 LOGGER_SECURITY_TOKEN = os.environ.get('LOGGER_SECURITY_TOKEN', 'secret')
 EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
