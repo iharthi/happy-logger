@@ -26,6 +26,8 @@ To configure, set environment variables
 * `MYSQL_PASSWORD` - mysql database port, default is happy_log
 * `DJANGO_ALLOWED_HOSTS` - set this to comma-separated list of hostnames to run on, like `domain1.com,domain2.com`
 * `DJANGO_SECURITY_KEY` - Django security key, set this to random string in production. See https://docs.djangoproject.com/en/dev/ref/settings/#secret-key
+* `DJANGO_STATIC_URL` - Django static URL, default '/static/'
+* `DJANGO_STATIC_ROOT` - Django static root directory, defaults to static in project directory
 
 ## Initial setup
 
